@@ -1,6 +1,6 @@
 AUTHOR = 'sharan'
 SITENAME = 'infrequent-blogs'
-SITEURL = ""
+SITEURL = "https://srinivasan-sharan.github.io/infrequesnt-logs"
 
 PATH = "content"
 
