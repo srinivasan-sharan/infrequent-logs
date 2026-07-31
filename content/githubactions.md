@@ -1,7 +1,7 @@
 Title: my first ci/cd pipeline
-Date: 2026-07-31 13:20
+Date: 2026-07-31 14:00
 Category: tech revelations
-Slug: my-super-post
+Slug: my-first-tech-post
 Authors: sharan
 Summary: bro yaps about how ci/cd is cool
 
