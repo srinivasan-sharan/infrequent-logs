@@ -25,8 +25,9 @@ AUTHOR_FEED_RSS = None
 
 # Social widget
 SOCIAL = [
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("config file", "https://github.com/srinivasan-sharan/infrequent-logs"),
+    ("linkedin", "https://www.linkedin.com/in/shrnsrnvsn/"),
+    ("github", "https://github.com/srinivasan-sharan")
 ]
 
 DEFAULT_PAGINATION = 10
