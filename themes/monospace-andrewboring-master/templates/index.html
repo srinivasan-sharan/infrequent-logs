@@ -5,7 +5,7 @@
 {% if articles %}
     {% set article_list = articles_page.object_list if articles_page else articles %}
     <section id="article-list">
-        <h2>All content</h2>
+        <h1>All content</h1>
         {% for article in article_list %}
         <article class="post-summary">
             <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title }}">{{ article.title }}</a></h3>

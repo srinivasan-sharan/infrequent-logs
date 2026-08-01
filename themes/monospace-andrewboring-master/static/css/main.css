@@ -12,6 +12,8 @@
 
 @import url("pygment.css");
 
+*, *:before, *:after { box-sizing:border-box; }
+
 body { margin:0px; padding:20px 0px; text-align:center; font-family:Monospace; color:#333; background-color:#F5F0E1;}
 a, a:visited { text-decoration:none; color:#333; }
 a:hover { color:#FFF; background-color:#333 }
@@ -22,9 +24,10 @@ blockquote { font-style:italic; background:#EAEAEA; margin:20px; padding:5px 10p
 blockquote cite { display:block; padding:10px 20px 0 0; text-align:right; }
 input, textarea { padding:5px; border:1px solid #8A8A8A; background:#EAEAEA; }
 input:hover, textarea:hover, blockquote:hover { background:#E5E5E5; }
-#wrap { margin:0px auto; text-align:left; font-size: 13px; line-height: 1.4; }
+img, iframe, video { max-width:100%; height:auto; }
+#wrap { margin:0px auto; text-align:left; font-size: 13px; line-height: 1.4; width:1024px; max-width:100%; padding:0px 20px; }
 
-#container { float:right; }
+#container { float:right; width:700px; max-width:100%; }
 #sidebar { overflow:hidden; clear:left; text-align:right; width:250px; height:auto; padding:0px 15px 0px 0px; border-right:1px dotted #C8C8C8; }
 #sidebar li { list-style-type:none; }
 #sidebar > li { margin:20px 0px; }
