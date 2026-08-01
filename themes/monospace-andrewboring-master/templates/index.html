@@ -2,14 +2,6 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 
-<header>
-<h1><a href="{{ SITEURL }}" id="site-title"> {# {{ SITENAME }} #} </a> {#:#} <a href="{{ SITEURL }}/{{ INDEX_SAVE_AS }}" id="page-title">Content Index</a></h1>
-</header>
-
-<div id="back">
-  <a href="{{ SITEURL }}">Return to Launch Page</a>
-</div>
-
 {% if articles %}
     {% set article_list = articles_page.object_list if articles_page else articles %}
     <section id="article-list">
