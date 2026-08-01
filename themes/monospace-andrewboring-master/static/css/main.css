@@ -131,3 +131,15 @@ input#s { width:70%; height:auto; margin:5px 0px; }
 #sidebar #post-list ul { margin:0px; padding:0px; }
 #sidebar #post-list li { border-top:1px dotted #C8C8C8; padding:6px 0px; margin:0px !important; }
 #sidebar #post-list li:first-child { border-top:none; }
+
+/* Responsive layout */
+@media (max-width: 980px) {
+    #container { float:none; width:100%; }
+    #sidebar { float:none; clear:both; width:100%; text-align:left; padding:20px 0px 0px 0px; margin-top:20px; border-right:none; border-top:1px dotted #C8C8C8; }
+}
+
+@media (max-width: 600px) {
+    body { padding:10px 0px; font-size:12px; }
+    #wrap { padding:0px 12px; }
+    .post-summary h3 { font-size:15px; }
+}
