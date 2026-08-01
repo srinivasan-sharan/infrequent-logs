@@ -11,14 +11,19 @@
 </div>
 
 {% if articles %}
+    {% set article_list = articles_page.object_list if articles_page else articles %}
     <section id="article-list">
         <h2>All content</h2>
-        <ul>
-          {% for article in articles %}
-            <li><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title}}">{{ article.title }}</a></li>
-          {% endfor %}
-        </ul>
+        {% for article in article_list %}
+        <article class="post-summary">
+            <h3><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="{{ article.title }}">{{ article.title }}</a></h3>
+            {% if not HIDE_DATE %}<time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>{% endif %}
+            <div class="summary">{{ article.summary }}</div>
+            <a class="read-more" href="{{ SITEURL }}/{{ article.url }}">Read more &raquo;</a>
+        </article>
+        {% endfor %}
     </section><!-- #article-list -->
+    {% include 'pagination.html' %}
 
 {% else %}
     <p>There are no articles yet. Why not write something nice?</p>

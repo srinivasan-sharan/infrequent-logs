@@ -114,3 +114,17 @@ input#s { width:70%; height:auto; margin:5px 0px; }
     position : relative;
     top : 8px;
 }
+
+/* Landing page: post summaries */
+#article-list { margin-top:20px; }
+.post-summary { margin:0px 0px 25px 0px; padding:0px 0px 25px 0px; border-bottom:1px dotted #C8C8C8; }
+.post-summary:last-child { border-bottom:none; margin-bottom:0px; padding-bottom:0px; }
+.post-summary h3 { margin:0px 0px 5px 0px; text-transform:none; font-size:16px; }
+.post-summary time { display:block; font-size:11px; color:#8A8A8A; margin-bottom:10px; }
+.post-summary .summary { margin:0px 0px 10px 0px; }
+.post-summary .read-more { font-size:12px; font-weight:bold; }
+
+/* Sidebar: post list */
+#sidebar #post-list ul { margin:0px; padding:0px; }
+#sidebar #post-list li { border-top:1px dotted #C8C8C8; padding:6px 0px; margin:0px !important; }
+#sidebar #post-list li:first-child { border-top:none; }
