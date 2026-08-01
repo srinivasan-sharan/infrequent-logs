@@ -1,6 +1,8 @@
 AUTHOR = 'sharan'
 SITENAME = 'infrequent-blogs'
-SITEURL = "https://srinivasan-sharan.github.io/infrequent-logs/"
+SITEURL = "https://srinivasan-sharan.github.io/infrequent-logs"
+THEME = "themes/monospace-andrewboring-master"
+CSS_FILE = "main.css"
 
 PATH = "content"
 
